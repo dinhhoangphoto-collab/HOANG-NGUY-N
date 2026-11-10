@@ -1,0 +1,22 @@
+[package]
+name = "lala-ai-editor"
+version = "1.0.0"
+description = "LaLa AI Editor — Direct CapCut Desktop GUI Automation Agent for macOS Apple Silicon (M1)"
+authors = ["LaLa AI Studio"]
+edition = "2021"
+
+[lib]
+name = "lala_ai_editor_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0", features = ["macos-private-api"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+core-graphics = "0.23"
+core-foundation = "0.9"
+cocoa = "0.25"
+objc = "0.2"

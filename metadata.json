@@ -1,0 +1,6 @@
+{
+  "name": "LaLa AI Editor",
+  "description": "Autonomous AI desktop assistant for macOS Apple Silicon (M1) that directly operates CapCut Desktop via Accessibility API, AppleScript, and Gemini visual screen understanding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

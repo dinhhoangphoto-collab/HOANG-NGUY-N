@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "LaLaAIEditor",
+  "version": "1.1.0",
+  "identifier": "com.lala.aieditor.capcut",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:3000",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "label": "assistant",
+        "title": "LaLa AI Editor",
+        "width": 360,
+        "height": 640,
+        "minWidth": 320,
+        "maxWidth": 520,
+        "minHeight": 220,
+        "maxHeight": 860,
+        "alwaysOnTop": true,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": false,
+        "transparent": true,
+        "theme": "Dark"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "dmg"],
+    "externalBin": ["binaries/lala-macos-helper"],
+    "macOS": {
+      "minimumSystemVersion": "12.0",
+      "entitlements": null,
+      "exceptionDomain": ""
+    }
+  }
+}
